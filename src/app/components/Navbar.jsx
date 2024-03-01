@@ -1,63 +1,42 @@
-import React from "react"
+"use client"
+import { useState } from "react"
 
 export default function Navbar() {
+  const [isActive, setIsActive] = useState(false);
+
+  const toggleMenu = () => {
+    setIsActive(!isActive);
+  };
+
   return (
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item">
-        Home
-      </a>
-
-      <a class="navbar-item">
-        Documentation
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More
+    <nav className="navbar has-background-danger-light has-shadow px-6 is-size-4" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
+        <a 
+          role="button" 
+          className={`navbar-burger ${isActive ? 'is-active' : ''}`} 
+          aria-label="menu" 
+          aria-expanded="true" 
+          data-target="navbarBasicExample"
+          onClick={toggleMenu}
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
         </a>
-
-        <div class="navbar-dropdown">
-          <a class="navbar-item">
-            About
+      </div>
+      <div id="navbarBasicExample" className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
+        <div className="navbar-start">
+          <a className="has-text-danger-dark navbar-item">
+            <strong>About</strong>
           </a>
-          <a class="navbar-item">
-            Jobs
+          <a className="has-text-danger-dark navbar-item">
+            <strong>Products</strong>
           </a>
-          <a class="navbar-item">
-            Contact
-          </a>
-          <hr class="navbar-divider"/>
-          <a class="navbar-item">
-            Report an issue
+          <a className="has-text-danger-dark navbar-item">
+            <strong>Contact</strong>
           </a>
         </div>
       </div>
-    </div>
-
-    {/* <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light">
-            Log in
-          </a>
-        </div>
-      </div>
-    </div> */}
-  </div>
-</nav>
+    </nav>
   )
 }
