@@ -33,6 +33,9 @@ export default function Navbar() {
             <strong>Products</strong>
           </a>
           <a className="has-text-danger-dark navbar-item">
+            <strong>Reviews</strong>
+          </a>
+          <a className="has-text-danger-dark navbar-item">
             <strong>Contact</strong>
           </a>
         </div>
