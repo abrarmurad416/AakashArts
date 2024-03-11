@@ -1,5 +1,6 @@
 "use client"
 import { useState } from "react"
+import {Link} from "react-scroll/modules"
 
 export default function Navbar() {
   const [isActive, setIsActive] = useState(false);
@@ -9,7 +10,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar has-background-danger-light has-shadow px-6 is-size-4" role="navigation" aria-label="main navigation">
+    <nav className="navbar has-background-danger-light has-shadow px-6 is-size-4 is-fixed-top" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a 
           role="button" 
@@ -26,18 +27,10 @@ export default function Navbar() {
       </div>
       <div id="navbarBasicExample" className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
         <div className="navbar-start">
-          <a className="has-text-danger-dark navbar-item">
-            <strong>About</strong>
-          </a>
-          <a className="has-text-danger-dark navbar-item">
-            <strong>Products</strong>
-          </a>
-          <a className="has-text-danger-dark navbar-item">
-            <strong>Reviews</strong>
-          </a>
-          <a className="has-text-danger-dark navbar-item">
-            <strong>Contact</strong>
-          </a>
+          <Link activeClass="active" className="has-text-danger-dark navbar-item" to="about" spy={true} smooth={true} duration={500} ><strong>About</strong></Link>
+          <Link activeClass="active" className="has-text-danger-dark navbar-item" to="products" spy={true} smooth={true} duration={500} ><strong>Products</strong></Link>
+          <Link activeClass="active" className="has-text-danger-dark navbar-item" to="reviews" spy={true} smooth={true} duration={500} ><strong>Reviews</strong></Link>
+          <Link activeClass="active" className="has-text-danger-dark navbar-item" to="contact" spy={true} smooth={true} duration={500} ><strong>Contact</strong></Link>
         </div>
       </div>
     </nav>

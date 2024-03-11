@@ -5,28 +5,25 @@ import 'font-awesome/css/font-awesome.min.css';
 
 export default function Landing() {
   return (
-    <main>
-      <section class="container">
-      <div className="py-6 px-6 text-center">
-        Aakash Arts is a dynamic creative studio specializing in textile
-        printing, custom apparel design, and art commissions. With a passion for
-        innovation and craftsmanship, we offer a diverse range of services
-        tailored to meet the unique needs of our clients.
+    <main id="about">
+      <div className="is-size-1 has-text-centered has-text-danger-dark py-6">
+        <b>Aakash Arts</b>
       </div>
-        <div class="columns features"> 
+      <section class="container">
+      <div className="mgt-large py-6 px-4 has-text-centered box has-shadow">
+      Aakash Arts stands as a premium destination for those seeking unparalleled craftsmanship and artistic ingenuity. Our studio is dedicated to pushing the boundaries in textile printing, custom apparel design, and art commissions. Driven by a profound passion for innovation. With a team of seasoned artisans and designers, each endowed with a unique blend of expertise, we distinguish ourselves on delivering tailored solutions that exceed expectations and leave an indelible mark on the world of art and fashion.
+      </div>
+        <div class="columns features py-4"> 
           <div class="column is-4">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
-                <i class="fa fa-paw"></i>
+                <i class="py-2 px-2 fa fa-print" style={{color: 'hsl(348, 86%, 43%)	', fontSize: '100px'}} ></i>
               </div>
               <div class="card-content">
                 <div class="content">
-                  <h4>Textile Printing </h4>
+                  <h4>Textile Printing</h4>
                   <p>
-                  At Aakash Arts, we excel in the art of textile printing, utilizing cutting-edge techniques to bring your designs to life on a variety of fabrics. Whether you are looking to add intricate patterns to garments or create eye-catching textiles for home decor, our skilled team ensures high-quality prints that capture the essence of your vision. From digital printing to screen printing and everything in between, we deliver exceptional results that elevate your textiles to new heights.
-                  </p>
-                  <p>
-                    <a href="#">Learn more</a>
+                  We excel in the art of textile printing. Whether you are looking to add intricate patterns to garments or create vibrant textiles for art, our skilled team ensures high-quality prints. We deliver exceptional results that elevate your textiles to new heights.
                   </p>
                 </div>
               </div>
@@ -35,16 +32,13 @@ export default function Landing() {
           <div class="column is-4">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
-                <i class="fa fa-empire"></i>
+                <i class="py-2 px-2 fa fa-diamond" style={{color: 'hsl(348, 86%, 43%)	', fontSize: '100px'}} ></i>
               </div>
               <div class="card-content">
                 <div class="content">
                   <h4>Custom Apparel Design</h4>
                   <p>
-                  Elevate your wardrobe with custom apparel designed by Aakash Arts. Our talented designers work closely with clients to create personalized clothing that reflects their individual style and personality. Whether it is for a special event, promotional merchandise, or everyday wear, we offer a wide range of customization options, including embroidery, vinyl printing, and dye-sublimation. With meticulous attention to detail and a commitment to quality, we bring your apparel ideas to life with unparalleled craftsmanship.
-                  </p>
-                  <p>
-                    <a href="#">Learn more</a>
+                  Our talented designers work closely with clients to create personalized clothing that reflects their style. Whether it is for a special event, promotional merchandise, or everyday wear, we offer a wide range of customization options. We utilize attention to detail and a commitment to quality. 
                   </p>
                 </div>
               </div>
@@ -53,17 +47,13 @@ export default function Landing() {
           <div class="column is-4">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
-                <i class="fa fa-apple"></i>
+                <i class="py-2 px-2 fa fa-paint-brush" style={{color: 'hsl(348, 86%, 43%)	', fontSize: '100px'}} ></i>
               </div>
               <div class="card-content">
                 <div class="content">
                   <h4> Art Commissions </h4>
                   <p>
-                  Unlock the potential of your imagination with art commissions from Aakash Arts. Our team of skilled artists specializes in bringing your visions to life on canvas, paper, or any medium of your choosing. Whether you are seeking a stunning portrait, a captivating mural, or a custom illustration, we work closely with you to understand your concept and bring it to fruition with precision and creativity. With a dedication to excellence and a passion for artistic expression, we transform your ideas into timeless masterpieces that inspire and enchant.
-
-                  </p>
-                  <p>
-                    <a href="#">Learn more</a>
+                  Our team of skilled artists specializes in art comissions on canvas, paper, or any medium of your choosing. Whether you are seeking a captivating mural or a custom illustration, we work closely with you to understand your concept and bring it to fruition with precision and creativity. 
                   </p>
                 </div>
               </div>
