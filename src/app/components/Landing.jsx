@@ -3,7 +3,7 @@
 import React from "react";
 import 'font-awesome/css/font-awesome.min.css';
 
-const Landing = () => {
+export default function Landing() {
   return (
     <main>
       <section class="container">
@@ -71,7 +71,7 @@ const Landing = () => {
         </div>
       </section>
     </main>
-  );
-};
+  )
+}
 
-export default Landing;
+
