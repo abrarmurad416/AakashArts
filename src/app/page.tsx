@@ -1,11 +1,12 @@
 import styles from "./page.module.css";
 import Navbar from "./components/Navbar"
+import Landing from "./components/Landing"
 
 export default function Home() {
   return (
     <main>
       <Navbar />
-      Aakash Arts
+      <Landing />
     </main>
   );
 }
