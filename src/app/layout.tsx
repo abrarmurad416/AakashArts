@@ -1,27 +1,22 @@
-import { ReactNode } from 'react';
-import Head from 'next/head';
-import { Merriweather_Sans } from 'next/font/google';
+import type { Metadata } from "next";
+import { Merriweather_Sans } from "next/font/google";
 import "./globals.scss";
 
-const inter = Merriweather_Sans({ subsets: ['latin'] });
+const inter = Merriweather_Sans({ subsets: ["latin"] });
 
-interface LayoutProps {
-  children: ReactNode;
-}
-
-const Layout = ({ children }: LayoutProps) => {
-  return (
-    <>
-      <Head>
-        <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-      </Head>
-      <body className={inter.className}>{children}</body>
-    </>
-  );
+export const metadata: Metadata = {
+  title: "Aakash Arts",
+  description: "website for Aakash Arts",
 };
 
-export default Layout;
-
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+    </html>
+  );
+}
