@@ -19,9 +19,7 @@ export default function Contact() {
                     <div className="is-size-5">
                       <button className="button is-danger is-outlined px-4 py-5">
                         <a href="mailto:aakasharts06@gmail.com">
-                          <i>
                             <strong>aakasharts06@gmail.com</strong>
-                          </i>
                         </a>
                       </button>
                       <br />
@@ -36,7 +34,7 @@ export default function Contact() {
                   <article className="tile is-child notification has-background-white-bis">
                     <p className="title">Social Media</p>
                     <div className="is-flex-direction-row">
-                      <a href="https://www.instagram.com/aakasharts81/" target="_blank"><i style={{color: 'hsl(348, 86%, 43%)	', fontSize: '100px'}} className="fa fa-instagram"></i></a>
+                      <a href="https://www.instagram.com/aakasharts81/" target="_blank"><i style={{color: 'hsl(348, 86%, 43%)	', fontSize: '60px'}} className="fa fa-instagram"></i></a>
                         <br />
                       
                     </div>
