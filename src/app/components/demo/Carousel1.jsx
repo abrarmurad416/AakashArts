@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useEffect } from "react";
-import "./carouselstyle.css";
+import "./carouselstyle1.css"
 
 export default function Carousel1({ images }) {
     const [slideIndex, setSlideIndex] = useState(1);
@@ -24,23 +24,32 @@ export default function Carousel1({ images }) {
 
     const showSlides = () => {
         let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
 
         for (let i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
 
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
         slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
     };
 
     useEffect(() => {
         showSlides();
-    }, [slideIndex, images]);
+    }, [slideIndex]);
 
     return (
         <div>
+            <div className="is-size-1 has-text-centered">
+                <b>Art pieces (testing with images)</b>
+            </div>
             <div className="slideshow-container">
                 {images.map((image, index) => (
-                    <div className="mySlides" key={index}>
+                    <div className="mySlides fade" key={index}>
                         <div className="numbertext">{index + 1} / {images.length}</div>
                         <img
                             src={`/images/${image}`}

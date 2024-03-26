@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
-import "./carouselstyle.css";
+import "./carouselstyle2.css";
 
 export default function Carousel2({ images }) {
     const [slideIndex, setSlideIndex] = useState(1);
@@ -23,25 +23,36 @@ export default function Carousel2({ images }) {
     };
 
     const showSlides = () => {
-        let slides = document.getElementsByClassName("mySlides");
+        let slides = document.getElementsByClassName("mySlides2");
+        let dots = document.getElementsByClassName("dot2");
 
         for (let i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
 
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
         slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
     };
 
     useEffect(() => {
         showSlides();
-    }, [slideIndex, images]);
+    }, [slideIndex]);
 
     return (
         <div>
-            <div className="slideshow-container">
+            <div className="is-size-1 has-text-centered">
+                <b>Art pieces</b>
+            </div>
+            <div className="slideshow-container2">
                 {images.map((image, index) => (
-                    <div className="mySlides" key={index}>
-                        <div className="numbertext">{index + 1} / {images.length}</div>
+                    <div className="mySlides2 fade2" key={index}>
+                        <div className="numbertext2">
+                            {index + 1} / {images.length}
+                        </div>
                         <img
                             src={`/images/${image}`}
                             style={{ width: "100%" }}
@@ -50,10 +61,10 @@ export default function Carousel2({ images }) {
                     </div>
                 ))}
 
-                <a className="prev" onClick={() => plusSlides(-1)}>
+                <a className="prev2" onClick={() => plusSlides(-1)}>
                     &#10094;
                 </a>
-                <a className="next" onClick={() => plusSlides(1)}>
+                <a className="next2" onClick={() => plusSlides(1)}>
                     &#10095;
                 </a>
             </div>
@@ -61,7 +72,11 @@ export default function Carousel2({ images }) {
 
             <div style={{ textAlign: "center" }}>
                 {images.map((_, index) => (
-                    <span className="dot" key={index} onClick={() => currentSlide(index + 1)}></span>
+                    <span
+                        className="dot2"
+                        key={index}
+                        onClick={() => currentSlide(index + 1)}
+                    ></span>
                 ))}
             </div>
         </div>
