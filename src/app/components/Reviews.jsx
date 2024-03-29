@@ -86,7 +86,7 @@ export default function Reviews() {
                                 <p>
                                     Print turned out great! Nice vibrant colours. Fits perfectly
                                     because they let me try it before to see what the size for me
-                                    is, washed well! It's a pretty good quality shirt.
+                                    is, washed well! It is a pretty good quality shirt.
                                 </p>
                             </div>
                         </div>
