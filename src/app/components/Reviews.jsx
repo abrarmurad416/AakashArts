@@ -13,7 +13,7 @@ export default function Reviews() {
                         <div class="card-content">
                             <div class="content">
                                 <p>
-                                    Very nice service! <br /> They're very welcoming and patient.
+                                    Very nice service! <br /> They are very welcoming and patient.
                                 </p>
                             </div>
                         </div>
