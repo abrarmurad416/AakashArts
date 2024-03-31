@@ -12,7 +12,7 @@ export default function Reviews() {
                     <div class="card is-shady">
                         <div class="card-content">
                             <div class="content">
-                                <p>
+                                <p class="has-text-centered">
                                     Very nice service! <br /> They are very welcoming and patient.
                                 </p>
                             </div>
@@ -45,7 +45,7 @@ export default function Reviews() {
                     <div class="card is-shady">
                         <div class="card-content">
                             <div class="content">
-                                <p>
+                                <p class="has-text-centered">
                                     Me and my best friend love the shirts. The owner was very
                                     patient with us and helped us pick a perfect design for us. I
                                     would definitely recommend!
@@ -83,7 +83,7 @@ export default function Reviews() {
                     <div class="card is-shady">
                         <div class="card-content">
                             <div class="content">
-                                <p>
+                                <p class="has-text-centered">
                                     Print turned out great! Nice vibrant colours. Fits perfectly
                                     because they let me try it before to see what the size for me
                                     is, washed well! It is a pretty good quality shirt.
@@ -118,7 +118,7 @@ export default function Reviews() {
                     <div class="card is-shady">
                         <div class="card-content">
                             <div class="content">
-                                <p>
+                                <p class="has-text-centered">
                                     The product itself is good quality and loved the fact that
                                     they make everything well organized by putting them in plastic
                                     packaging!
