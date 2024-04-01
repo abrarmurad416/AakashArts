@@ -36,7 +36,7 @@ export default function Landing() {
               </div>
               <div class="card-content">
                 <div class="content">
-                  <h4>Custom Apparel Design</h4>
+                  <h4>Custom Design</h4>
                   <p>
                   Our talented designers work closely with clients to create personalized clothing that reflects their style. Whether it is for a special event, promotional merchandise, or everyday wear, we offer a wide range of customization options. We utilize attention to detail and a commitment to quality. 
                   </p>

@@ -45,7 +45,7 @@ export default function Carousel2({ images }) {
     return (
         <div>
             <div className="is-size-1 has-text-centered">
-                <b>Custom Apparel Design</b>
+                <b>Custom Design</b>
             </div>
             <div className="slideshow-container2">
                 {images.map((image, index) => (

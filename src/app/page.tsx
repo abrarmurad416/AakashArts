@@ -1,4 +1,3 @@
-import styles from "./page.module.css";
 import Navbar from "./components/Navbar"
 import Landing from "./components/Landing"
 import Products from "./components/Products"
@@ -11,16 +10,20 @@ import Footer from "./components/Footer"
 
 export default function Home() {
   const imagesSet1 = [
-    "ferrari.jpg",
-    "download.jpg"
+    "/textile/Messi.png",
+    "/textile/warriors.png",
+    "/textile/barbeque.png"
+
   ];
   const imagesSet2 = [
-    "lambo.jpg",
-    "lambo.jpg"
+    "/custom/raptors.png",
+    "/custom/airmax90.png",
+    "/custom/airforce.png"
   ];
-  const newimages = [
-    "porsche.jpg",
-    "download.jpg"
+  const imagesSet3 = [
+    "/art/car.png",
+    "/art/space.png",
+    "/art/dbz.png"
   ];
   return (
     <main>
@@ -29,7 +32,7 @@ export default function Home() {
       <Products />
       <Carousel1 images={imagesSet1} />
       <Carousel2 images={imagesSet2} />
-      <Carousel3 images={newimages} />
+      <Carousel3 images={imagesSet3} />
       <Reviews />
       <Contact />
       <Footer />
